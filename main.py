@@ -53,7 +53,7 @@ def test_tweet():
     list1 = [range(10, 1000)]
     randomm = random.choice(list1)
 
-    postbar.send_keys("Team Brown is On Twitter!!!")
+    postbar.send_keys("Team Brown is On Twitter!!!!")
 
     time.sleep(1)
     postbutton = driver.find_element(By.XPATH,'//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div')
@@ -152,6 +152,7 @@ def test_profile():
     closebutton = driver.find_element(By.XPATH,
                                       '/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div[2]/div')
     closebutton.click()
+
 
 
     time.sleep(2)
